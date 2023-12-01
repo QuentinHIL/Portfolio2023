@@ -1,0 +1,57 @@
+#apropos{
+    background: linear-gradient(180deg, $sec 0%, $sec 20%, black 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    #conttitredefilantdeux{
+        align-self: end;
+        max-width: 100%;
+        overflow: hidden;
+        transform: rotateX(180deg);
+        margin-bottom: -5%;
+        h2{
+            display: inline-block;
+            padding-left: 100%;
+            white-space: nowrap;
+            animation: defilement-rtl 20s infinite linear;
+            animation-delay: 3s;
+            margin: 0;
+            font-family: crima;
+            font-size: 8rem;
+            color: black;
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
+    }
+    #presentation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        div{
+            width: 60%;
+            margin-left: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h3{
+                font-family: crima;
+                font-size: 4rem;
+                @include nomargetopbot;
+            }
+            p{
+                @include nomargetopbot;
+                margin-top: 2rem;
+                font-family: florence;
+                font-size: 1.5rem;
+            }
+            button{
+                @include bouton;
+            }
+        }
+        img{
+            max-width: 31%;
+        }
+    }
+}

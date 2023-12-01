@@ -1,0 +1,17 @@
+#competences{
+    height:100vh;
+    backdrop-filter: blur(5px);
+    #contcompetences{
+        @include marge60;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            font-family: crima;
+            color: $sec;
+            font-size: 4rem;
+            @include nomargetopbot;
+        }
+    }
+}

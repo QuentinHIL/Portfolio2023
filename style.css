@@ -1,0 +1,302 @@
+#hero {
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#hero header {
+  width: 50%;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#hero header span {
+  font-family: crima;
+  font-size: 8rem;
+  color: white;
+}
+#hero header ul {
+  width: 60%;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+#hero header ul li {
+  font-family: crima;
+  font-size: 2rem;
+  color: white;
+}
+#hero canvas {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+#hero #conttitredefilant {
+  max-width: 100%;
+  overflow: hidden;
+}
+#hero #conttitredefilant h1 {
+  display: inline-block;
+  padding-left: 100%;
+  white-space: nowrap;
+  -webkit-animation: defilement-rtl 20s infinite linear;
+          animation: defilement-rtl 20s infinite linear;
+  margin: 0;
+  font-family: crima;
+  font-size: 8rem;
+  color: #FFC857;
+}
+#hero #conttitredefilant h1:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+#apropos {
+  background: linear-gradient(180deg, #FFC857 0%, #FFC857 20%, black 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#apropos #conttitredefilantdeux {
+  align-self: end;
+  max-width: 100%;
+  overflow: hidden;
+  transform: rotateX(180deg);
+  margin-bottom: -5%;
+}
+#apropos #conttitredefilantdeux h2 {
+  display: inline-block;
+  padding-left: 100%;
+  white-space: nowrap;
+  -webkit-animation: defilement-rtl 20s infinite linear;
+          animation: defilement-rtl 20s infinite linear;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  margin: 0;
+  font-family: crima;
+  font-size: 8rem;
+  color: black;
+}
+#apropos #conttitredefilantdeux h2:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+#apropos #presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#apropos #presentation div {
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#apropos #presentation div h3 {
+  font-family: crima;
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#apropos #presentation div p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-top: 2rem;
+  font-family: florence;
+  font-size: 1.5rem;
+}
+#apropos #presentation div button {
+  font-family: crima;
+  font-size: 2rem;
+  align-self: flex-end;
+  background-color: black;
+  color: #FFC857;
+  margin-top: 2rem;
+  border-radius: 5rem;
+  border-style: none;
+  border-width: 0.25rem;
+  height: 5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 3%;
+  padding-right: 3%;
+  cursor: pointer;
+}
+#apropos #presentation img {
+  max-width: 31%;
+}
+
+@-webkit-keyframes defilement-rtl {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes defilement-rtl {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animatecircle {
+  0% {
+    transform: perspective(1000px) rotateY(360deg) rotateX(15deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(0deg) rotateX(15deg);
+  }
+}
+@keyframes animatecircle {
+  0% {
+    transform: perspective(1000px) rotateY(360deg) rotateX(15deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(0deg) rotateX(15deg);
+  }
+}
+#parcours {
+  height: 100vh;
+  background: linear-gradient(black 0%, black 20%, #FFC857 100%);
+  display: flex;
+  align-items: center;
+}
+#parcours .circle {
+  font-family: florence;
+  transform-style: preserve-3d;
+  -webkit-animation: animatecircle 8s linear infinite;
+          animation: animatecircle 8s linear infinite;
+}
+#parcours .circle .char {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  color: black;
+  font-size: 2rem;
+  padding: 5px 12px;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform: rotateY(calc(var(--char-index) * 12deg)) translateZ(250px);
+}
+#parcours #contcursus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+}
+#parcours #contcursus h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: crima;
+  font-size: 4rem;
+  color: #FFC857;
+  text-align: center;
+}
+#parcours #contcursus div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#parcours #contcursus div button {
+  font-family: crima;
+  font-size: 2rem;
+  align-self: flex-end;
+  background-color: black;
+  color: #FFC857;
+  margin-top: 2rem;
+  border-radius: 5rem;
+  border-style: none;
+  border-width: 0.25rem;
+  height: 5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 3%;
+  padding-right: 3%;
+  cursor: pointer;
+}
+#parcours #contcursus div button:focus {
+  background-color: white;
+  color: black;
+}
+#parcours #contcursus div .carte {
+  display: none;
+}
+#parcours #contcursus div .carte h4 {
+  font-family: florence;
+  font-size: 2rem;
+}
+#parcours #contcursus div .carte p {
+  font-family: florence;
+  font-size: 1rem;
+}
+#parcours #contcursus .show {
+  display: block !important;
+  -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
+}
+
+#competences {
+  height: 100vh;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+#competences #contcompetences {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#competences #contcompetences h3 {
+  font-family: crima;
+  color: #FFC857;
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@font-face {
+  font-family: crima;
+  src: url("./fonts/Crima.ttf");
+}
+@font-face {
+  font-family: florence;
+  src: url("./fonts/Florsn01.ttf");
+}
+body {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

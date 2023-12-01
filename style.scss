@@ -1,0 +1,21 @@
+@import './composants/variables';
+@import './composants/mixins';
+@import './composants/hero';
+@import './composants/apropos';
+@import './composants/animations';
+@import './composants/parcours';
+@import './composants/competences';
+
+
+
+@font-face {
+    font-family: crima;
+    src: url('./fonts/Crima.ttf');
+}
+@font-face {
+    font-family: florence;
+    src: url('./fonts/Florsn01.ttf');
+}
+body{
+    margin: 0;
+}

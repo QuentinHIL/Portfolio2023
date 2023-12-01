@@ -1,0 +1,36 @@
+@mixin marge80 {
+    width: 80%;
+    margin: auto;
+}
+@mixin marge70 {
+    width: 70%;
+    margin: auto;
+}
+@mixin marge60 {
+    width: 60%;
+    margin: auto;
+}
+@mixin marge50 {
+    width: 50%;
+    margin: auto;
+}
+@mixin nomargetopbot{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@mixin bouton{
+    font-family: crima;
+    font-size: 2rem;
+    align-self: flex-end;
+    background-color: black;
+    color: $sec;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    border-style: none;
+    border-width: 0.25rem;
+    height: 5rem;
+    width: fit-content;
+    padding-left: 3%;
+    padding-right: 3%;
+    cursor: pointer;
+}

@@ -270,23 +270,81 @@
 
 #competences {
   height: 100vh;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
 }
 #competences #contcompetences {
   width: 60%;
   margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 #competences #contcompetences h3 {
   font-family: crima;
-  color: #FFC857;
+  color: white;
   font-size: 4rem;
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 4rem;
+}
+#competences #contcompetences #pictos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#competences #contcompetences #pictos svg:hover {
+  fill: #ffffff;
+  cursor: pointer;
+}
+#competences #contcompetences #pictos .selected {
+  fill: white;
+}
+#competences #contcompetences .cards {
+  display: none;
+  padding-top: 4rem;
+}
+#competences #contcompetences .cards h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: crima;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+#competences #contcompetences .cards p {
+  color: white;
+  font-family: florence;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#competences #contcompetences .cards .contcomp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#competences #contcompetences .cards .contcomp .comp {
+  margin-top: 1rem;
+  border-radius: 2rem;
+  background-color: #FFC857;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  font-family: crima;
+  color: black;
+  font-size: 2rem;
+}
+#competences #contcompetences .show {
+  display: block !important;
+  -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
 }
 
 @font-face {

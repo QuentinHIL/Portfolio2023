@@ -1,17 +1,72 @@
 #competences{
     height:100vh;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
     #contcompetences{
         @include marge60;
+        @include nomargetopbot;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         h3{
             font-family: crima;
-            color: $sec;
+            color: white;
             font-size: 4rem;
             @include nomargetopbot;
+            padding-bottom: 4rem;
+        }
+        #pictos{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            svg:hover{
+                fill: #ffffff;
+                cursor: pointer;
+            }
+            .selected {
+                fill: white;
+            }
+        }
+        .cards{
+            display: none;
+            padding-top: 4rem;
+            h4{
+                @include nomargetopbot;
+                font-family: crima;
+                font-size: 3rem;
+                text-align: center;
+                color: white;
+            }
+            p{
+                color: white;
+                font-family: florence;
+                font-size: 1.5rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            .contcomp{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                .comp{
+                    margin-top: 1rem;
+                    border-radius: 2rem;
+                    background-color: $sec;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-top: 0.5rem;
+                    font-family: crima;
+                    color: black;
+                    font-size: 2rem;
+                }
+            }
+        }
+        .show{
+            display: block !important;
+            animation: fadeIn 3s;
         }
     }
 }
